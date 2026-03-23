@@ -5,7 +5,7 @@
  */
 import { useState, useEffect } from 'react';
 
-export default function LevelComplete({ level, xp, onNext, onMap }) {
+export default function LevelComplete({ level, xp, onNext, onMap, onClose }) {
   const [show, setShow] = useState(false);
   const [showXP, setShowXP] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
@@ -17,11 +17,24 @@ export default function LevelComplete({ level, xp, onNext, onMap }) {
     return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
   }, []);
 
+  // Esc 键关闭弹窗
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === 'Escape' && onClose) {
+        e.preventDefault();
+        e.stopPropagation();
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [onClose]);
+
   const isBoss = level?.id?.startsWith('boss');
 
   return (
-    <div className={`level-complete-overlay ${show ? 'level-complete-overlay--visible' : ''}`}>
-      <div className={`level-complete ${show ? 'level-complete--visible' : ''}`}>
+    <div className={`level-complete-overlay ${show ? 'level-complete-overlay--visible' : ''}`} onClick={onClose}>
+      <div className={`level-complete ${show ? 'level-complete--visible' : ''}`} onClick={e => e.stopPropagation()}>
         <div className="level-complete__banner">
           {isBoss ? '🏆 BOSS 击败！' : '⚔️ 怪物击败！'}
         </div>
@@ -51,6 +64,9 @@ export default function LevelComplete({ level, xp, onNext, onMap }) {
           </button>
           <button className="level-complete__btn level-complete__btn--map" onClick={onMap}>
             🗺️ 世界地图
+          </button>
+          <button className="level-complete__btn level-complete__btn--close" onClick={onClose}>
+            📖 继续练习
           </button>
         </div>
       </div>

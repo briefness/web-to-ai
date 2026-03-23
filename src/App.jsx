@@ -54,15 +54,15 @@ export default function App() {
   // ========== 全局快捷键 ==========
   useEffect(() => {
     const handleKey = (e) => {
-      // Esc → 返回地图
-      if (e.key === 'Escape' && view === 'play') {
+      // Esc → 返回地图（但通关弹窗打开时不触发，由弹窗自己处理）
+      if (e.key === 'Escape' && view === 'play' && !levelComplete) {
         e.preventDefault();
         setView('map');
       }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [view]);
+  }, [view, levelComplete]);
 
   const gameCanvasRef = useRef(null);
   const activeLevel = activeLevelId ? getLevelById(activeLevelId) : null;
@@ -396,6 +396,7 @@ export default function App() {
           xp={activeLevel?.rewards?.xp || 0}
           onNext={handleNextLevel}
           onMap={handleBackToMap}
+          onClose={() => setLevelComplete(false)}
         />
       )}
       <AchievementToast achievement={newAchievement} onDismiss={dismissAchievement} />
