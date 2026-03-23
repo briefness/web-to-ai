@@ -16,9 +16,10 @@ import LoadingScreen from './components/LoadingScreen';
 import LevelComplete from './components/LevelComplete';
 import AchievementToast from './components/AchievementToast';
 import TutorialPanel from './components/TutorialPanel';
+import DifficultySelector from './components/DifficultySelector';
 import { usePyodide } from './hooks/usePyodide';
 import { useGameProgress } from './hooks/useGameProgress';
-import levels, { getLevelById, getNextLevel } from './levels/levelData';
+import levels, { getLevelById, getNextLevel, getLevelWithDifficulty, DEFAULT_DIFFICULTY } from './levels/levelData';
 import { getTutorial } from './levels/tutorialData';
 import { useAchievements } from './hooks/useAchievements';
 import { useSound } from './hooks/useSound';
@@ -50,6 +51,7 @@ export default function App() {
   const [editorTab, setEditorTab] = useState('code'); // 'code' | 'tutorial'
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [showProgressPanel, setShowProgressPanel] = useState(false);
+  const [difficulty, setDifficulty] = useState(() => localStorage.getItem('cq_difficulty') || DEFAULT_DIFFICULTY);
 
   // ========== 全局快捷键 ==========
   useEffect(() => {
@@ -65,11 +67,12 @@ export default function App() {
   }, [view, levelComplete]);
 
   const gameCanvasRef = useRef(null);
-  const activeLevel = activeLevelId ? getLevelById(activeLevelId) : null;
+  const rawLevel = activeLevelId ? getLevelById(activeLevelId) : null;
+  const activeLevel = getLevelWithDifficulty(rawLevel, difficulty);
 
   // ========== 选关 ==========
   const handleSelectLevel = useCallback((levelId) => {
-    const level = getLevelById(levelId);
+    const level = getLevelWithDifficulty(levelId, difficulty);
     if (!level) return;
     setActiveLevelId(levelId);
     setCode(level.initialCode);
@@ -82,7 +85,7 @@ export default function App() {
     setEditorTab('code');
     setCurrentLevel(levelId);
     setView('play');
-  }, [setCurrentLevel]);
+  }, [setCurrentLevel, difficulty]);
 
   // ========== 🔑 运行代码 — 驱动游戏动画 ==========
   const handleRun = useCallback(async () => {
@@ -316,6 +319,24 @@ export default function App() {
           <span className="navbar__level-name">
             关卡 {activeLevelId}: {activeLevel?.title}
           </span>
+          <DifficultySelector
+            level={rawLevel}
+            value={difficulty}
+            onChange={(d) => {
+              setDifficulty(d);
+              localStorage.setItem('cq_difficulty', d);
+              // 切难度时重新加载关卡
+              const newLevel = getLevelWithDifficulty(rawLevel, d);
+              if (newLevel) {
+                setCode(newLevel.initialCode);
+                setObjectives(newLevel.objectives.map(o => ({ ...o, completed: false })));
+                setOutputLines([]);
+                setLevelComplete(false);
+                setShowHint(false);
+                gameCanvasRef.current?.resetScene(newLevel.scene);
+              }
+            }}
+          />
         </div>
         <div className="navbar__stats">
           <button

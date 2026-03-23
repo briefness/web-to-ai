@@ -23,6 +23,8 @@ const tutorials = {
       { type: 'heading', content: 'f-string 格式化' },
       { type: 'text', content: 'Python 的 f-string 等同于 JS 的模板字符串，用 `f"..."` 包裹，变量放在 `{}`中。' },
       { type: 'code', label: '示例', content: 'name = "CodeQuest"\nversion = 2\nprint(f"欢迎来到 {name} v{version}!")  # 欢迎来到 CodeQuest v2!' },
+      { type: 'heading', content: '格式化精度控制' },
+      { type: 'code', label: '数字格式化', content: 'pi = 3.14159\nprint(f"pi = {pi:.2f}")    # pi = 3.14（保留2位）\nprint(f"pi = {pi:.1f}")    # pi = 3.1（保留1位）\n\n# 对齐和填充\nfor i in range(1, 4):\n    print(f"Level {i:>3}: ★")  # 右对齐3字符' },
       { type: 'heading', content: '算术运算' },
       { type: 'list', items: [
         '`+` `-` `*` `/` 基本运算（和 JS 一样）',
@@ -30,7 +32,21 @@ const tutorials = {
         '`**` 幂运算：`2 ** 10` → `1024`（JS 用 `Math.pow`）',
         '`%` 取余：`7 % 3` → `1`',
       ]},
+      { type: 'heading', content: '字符串方法速查' },
+      { type: 'code', label: '常用方法', content: '"hello".upper()        # "HELLO"\n"WORLD".lower()        # "world"\n"hello world".title()   # "Hello World"\n"-" * 20                # "--------------------"\nlen("hello")            # 5' },
+      { type: 'heading', content: '🚨 常见错误' },
+      { type: 'list', items: [
+        '❌ 忘了 f 前缀：`print("{name}")` 不会替换变量，要写 `f"{name}"`',
+        '❌ `sum` 和 `len` 是函数，要加括号：`sum(list)` 而不是 `sum`',
+        '❌ 字符串乘法：`"-" * 20` 产生20个减号，这是 Python 特有语法',
+      ]},
       { type: 'tip', content: 'Python 没有 `const`，但约定常量用**全大写**命名，如 `MAX_SIZE = 100`' },
+      { type: 'heading', content: '📚 延伸阅读' },
+      { type: 'list', items: [
+        '📖 Python 官方教程 - 数字与字符串',
+        '📖 f-string 完全指南（realpython.com）',
+        '🏋️ 实战挑战：写一个 BMI 计算器（输入身高体重，输出 BMI 和健康建议）',
+      ]},
     ],
   },
 

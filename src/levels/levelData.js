@@ -6,6 +6,8 @@
  *    代码验证结果直接映射到游戏动画
  */
 
+import difficultyVariants from './difficultyVariants';
+
 const levels = [
   // ===== 1-1: 变量之泉 =====
   {
@@ -3568,3 +3570,39 @@ export function getNextLevel(currentId) {
 export function getLevelIndex(id) {
   return levels.findIndex(l => l.id === id);
 }
+
+// 自动将 difficultyVariants 合并到对应关卡的 difficulties 字段
+levels.forEach(level => {
+  if (difficultyVariants[level.id]) {
+    if (!level.difficulties) level.difficulties = {};
+    Object.assign(level.difficulties, difficultyVariants[level.id]);
+  }
+});
+
+/**
+ * 根据难度获取关卡数据
+ * 透明地将难度变体合并到基础关卡数据中
+ */
+export function getLevelWithDifficulty(id, difficulty = 'easy') {
+  const level = typeof id === 'string' ? getLevelById(id) : id;
+  if (!level) return null;
+  if (difficulty === 'easy' || !level.difficulties || !level.difficulties[difficulty]) {
+    return level;
+  }
+  const variant = level.difficulties[difficulty];
+  return {
+    ...level,
+    ...variant,
+    validation: variant.validation || level.validation,
+    objectives: variant.objectives || level.objectives,
+    scene: { ...level.scene, ...(variant.scene || {}) },
+  };
+}
+
+export const DEFAULT_DIFFICULTY = 'easy';
+
+export const DIFFICULTIES = {
+  easy: { label: '⭐ 简单', desc: '填空入门，适合初学者' },
+  normal: { label: '⭐⭐ 一般', desc: '需要编写完整逻辑' },
+  hard: { label: '⭐⭐⭐ 困难', desc: '综合应用，实战级别' },
+};
