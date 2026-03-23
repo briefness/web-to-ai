@@ -1,5 +1,5 @@
 /**
- * App.jsx - CodeQuest 主应用
+ * App.jsx - 码界觉醒 主应用
  *
  * 🔑 核心改造：handleRun 中代码验证结果直接驱动游戏动画
  *    代码结果 → checkResults (含 displayValue/speechText) → GameRenderer.playCodeResults()
@@ -238,7 +238,7 @@ export default function App() {
         <nav className="navbar">
           <div className="navbar__logo">
             <span className="navbar__logo-icon">⚔️</span>
-            CodeQuest
+            码界觉醒
           </div>
           <div className="navbar__stats">
             <button
@@ -259,11 +259,6 @@ export default function App() {
               <span className="navbar__stat-icon">📊</span>
               {progress.completedLevels.length}/{levels.length}
             </div>
-            <button
-              className="navbar__icon-btn navbar__icon-btn--danger"
-              onClick={() => setShowResetConfirm(true)}
-              title="重置进度"
-            >🗑️</button>
           </div>
         </nav>
         <WorldMap
@@ -313,7 +308,7 @@ export default function App() {
       <nav className="navbar">
         <div className="navbar__logo" onClick={handleBackToMap} style={{ cursor: 'pointer' }}>
           <span className="navbar__logo-icon">⚔️</span>
-          CodeQuest
+          码界觉醒
         </div>
         <div className="navbar__level-info">
           <span className="navbar__level-name">

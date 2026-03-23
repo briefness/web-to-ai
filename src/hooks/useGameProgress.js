@@ -52,13 +52,10 @@ export function useGameProgress() {
   }, []);
 
   const isLevelUnlocked = useCallback((levelId) => {
-    // TODO: 临时关闭解锁限制，所有关卡直接可玩
-    // 恢复时取消下面 return true 并启用原逻辑
-    return true;
-    // if (levelId === '1-1') return true;
-    // const levelIdx = levels.findIndex(l => l.id === levelId);
-    // if (levelIdx <= 0) return true;
-    // return progress.completedLevels.includes(levels[levelIdx - 1].id);
+    if (levelId === '1-1') return true;
+    const levelIdx = levels.findIndex(l => l.id === levelId);
+    if (levelIdx <= 0) return true;
+    return progress.completedLevels.includes(levels[levelIdx - 1].id);
   }, [progress.completedLevels]);
 
   const isLevelCompleted = useCallback((levelId) => {

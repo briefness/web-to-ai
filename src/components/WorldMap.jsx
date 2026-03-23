@@ -47,7 +47,7 @@ export default function WorldMap({ onSelectLevel, isLevelUnlocked, isLevelComple
   return (
     <div className="world-map">
       <div className="world-map__header">
-        <h1 className="world-map__title">⚔️ CodeQuest</h1>
+        <h1 className="world-map__title">⚔️ 码界觉醒</h1>
         <p className="world-map__subtitle">
           用代码征服世界 · 总经验值: <span style={{ color: '#fbbf24', fontWeight: 700 }}>{progress.xp} XP</span>
           {' · '}
