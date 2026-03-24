@@ -15,6 +15,7 @@ import WorldMap from './components/WorldMap';
 import LoadingScreen from './components/LoadingScreen';
 import LevelComplete from './components/LevelComplete';
 import AchievementToast from './components/AchievementToast';
+import AchievementModal from './components/AchievementModal';
 import TutorialPanel from './components/TutorialPanel';
 import DifficultySelector from './components/DifficultySelector';
 import { usePyodide } from './hooks/usePyodide';
@@ -266,10 +267,14 @@ export default function App() {
           isLevelUnlocked={isLevelUnlocked}
           isLevelCompleted={isLevelCompleted}
           progress={progress}
-          showProgressPanel={showProgressPanel}
-          achievements={checkAchievements}
-          achievementData={newAchievement}
         />
+        {/* 成就总览弹窗 */}
+        {showProgressPanel && (
+          <AchievementModal
+            progress={progress}
+            onClose={() => setShowProgressPanel(false)}
+          />
+        )}
         <AchievementToast achievement={newAchievement} onDismiss={dismissAchievement} />
         {/* 重置进度确认弹窗 */}
         {showResetConfirm && (

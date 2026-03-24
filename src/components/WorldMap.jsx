@@ -25,8 +25,8 @@ function getDifficulty(level) {
   return DIFFICULTY_MAP[4];
 }
 
-export default function WorldMap({ onSelectLevel, isLevelUnlocked, isLevelCompleted, progress, showProgressPanel }) {
-  const { achievements, unlockedCount, totalCount } = useAchievements();
+export default function WorldMap({ onSelectLevel, isLevelUnlocked, isLevelCompleted, progress }) {
+  const { unlockedCount, totalCount } = useAchievements();
 
   // Group levels by region
   const regions = [];
@@ -60,44 +60,6 @@ export default function WorldMap({ onSelectLevel, isLevelUnlocked, isLevelComple
           </span>
         </p>
       </div>
-
-      {/* 进度总览面板 */}
-      {showProgressPanel && (
-        <div className="progress-panel">
-          <div className="progress-panel__header">
-            <h3>🏅 成就总览 ({unlockedCount}/{totalCount})</h3>
-            <div className="progress-panel__bar">
-              <div
-                className="progress-panel__bar-fill"
-                style={{ width: `${(unlockedCount / totalCount) * 100}%` }}
-              />
-            </div>
-          </div>
-          <div className="progress-panel__grid">
-            {achievements.map(ach => (
-              <div
-                key={ach.id}
-                className={`progress-panel__badge ${ach.unlocked ? 'progress-panel__badge--unlocked' : ''}`}
-              >
-                <span className="progress-panel__badge-icon">{ach.icon}</span>
-                <span className="progress-panel__badge-name">{ach.title}</span>
-                <span className="progress-panel__badge-desc">{ach.description}</span>
-              </div>
-            ))}
-          </div>
-          <div className="progress-panel__stats">
-            <div className="progress-panel__stat">
-              <span>⭐</span> {progress.xp} XP
-            </div>
-            <div className="progress-panel__stat">
-              <span>📊</span> {progress.completedLevels.length} / {levels.length} 关卡
-            </div>
-            <div className="progress-panel__stat">
-              <span>🏅</span> {unlockedCount} / {totalCount} 成就
-            </div>
-          </div>
-        </div>
-      )}
 
       <div className="world-map__content">
         {regions.map((region, ri) => {

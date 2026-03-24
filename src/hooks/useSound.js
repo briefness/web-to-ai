@@ -75,9 +75,9 @@ const SOUNDS = {
 export function useSound() {
   const [enabled, setEnabled] = useState(() => {
     try {
-      return localStorage.getItem('codequest_sound') !== 'off';
+      return localStorage.getItem('codequest_sound') === 'on';
     } catch {
-      return true;
+      return false;
     }
   });
 
