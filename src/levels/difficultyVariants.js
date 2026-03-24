@@ -63,7 +63,7 @@ print(f"separator: {separator}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 6 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：变量之泉\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 变量赋值\n# - f-string 格式化\n# - 算术运算\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：变量之泉\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 创建 celsius = 100\n# 2. 计算 fahrenheit = 212.0\n# 3. 打印温度转换结果\n# 4. 计算平均华氏温度\n# 5. 字符串 upper()\n# 6. 字符串乘法\n# 7. 索引获取 "shield"\n# 8. 切片获取前 3 个\n# 9. len() 获取总数\n# 10. 负索引获取最后 3 个\n# 11. 步长反转列表\n# 12. max/min 找极值\n#\n# 📌 期望输出（部分）：\n#   → 100°C = 212.0°F\n#   → avg_fahrenheit: 107.0\n#   → title: TEMPERATURE REPORT\n#   → separator: --------------------\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 创建 celsius = 100' },
         { id: 'obj2', text: '🔥 计算 fahrenheit = 212.0' },
@@ -139,7 +139,7 @@ print(f"high: {high}, low: {low}")
       scene: { theme: 'maze', monster: 'skeleton', totalObjectives: 6 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：列表迷宫\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - list 创建\n# - 索引访问\n# - 切片\n# - len()\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：1-2\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 索引获取 "shield"\n# 2. 切片获取前 3 个\n# 3. len() 获取总数\n# 4. 负索引获取最后 3 个\n# 5. 步长反转列表\n# 6. max/min 找极值\n# 7. 获取英雄名字\n#\n# 📌 期望输出（部分）：\n#   → last_three: [88, 73, 91]\n#   → reversed: [91, 73, 88, 60, 95, 78, 92, 85]\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 索引获取 "shield"' },
         { id: 'obj2', text: '🔥 切片获取前 3 个' },
@@ -212,7 +212,7 @@ print(f"total_stats: {total_stats}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 6 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：字典堡垒\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - dict 创建\n# - 键值访问\n# - 字典方法\n# - 遍历\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：1-3\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 获取英雄名字\n# 2. 添加 defense 属性\n# 3. 获取所有属性名\n# 4. 安全取值 get()\n# 5. 访问嵌套字典\n# 6. 计算装备总属性\n#\n# 📌 期望输出（部分）：\n#   → attrs:\n#   → total_stats: 25\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 获取英雄名字' },
         { id: 'obj2', text: '🔥 添加 defense 属性' },
@@ -284,7 +284,7 @@ print(f"clamp3: {clamp(50, 0, 100)}")
       scene: { theme: 'forest', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：函数森林\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - def 函数定义\n# - 参数\n# - 返回值\n# - 默认参数\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：1-4\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. attack_power 函数\n# 2. heal 默认参数\n# 3. full_heal 上限 100\n# 4. average *args\n# 5. clamp 边界限制\n#\n# 📌 期望输出（部分）：\n#   → full_heal: 100\n#   → avg: 25.0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 attack_power 函数' },
         { id: 'obj2', text: '🔥 heal 默认参数' },
@@ -371,7 +371,7 @@ print(f"enemy2_hp: {enemy2.hp}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：类与对象殿堂\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - class 定义\n# - __init__\n# - 方法\n# - 实例属性\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：类与对象殿堂\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. __init__ 方法\n# 2. take_damage 方法\n# 3. is_alive 方法\n# 4. Goblin 被击杀\n# 5. Warrior 战斗报告\n#\n# 📌 期望输出（部分）：\n#   → enemy1_alive: False\n#   → Warrior: 1 kills\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 __init__ 方法' },
         { id: 'obj2', text: '🔥 take_damage 方法' },
@@ -457,7 +457,7 @@ print(f"can_enter: {can_enter}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：条件分岔路\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - if/elif/else\n# - 比较运算符\n# - 逻辑运算符\n# - 条件表达式\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：条件分岔路\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. if/elif 判断等级 B\n# 2. 布尔判断 passed\n# 3. 三元表达式 result\n# 4. FizzBuzz 输出\n# 5. 逻辑运算 and\n# 6. 平方数列表\n#\n# 📌 期望输出（部分）：\n#   → result: 良好\n#   → fizzbuzz: 1,2,Fizz,4,Buzz\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 if/elif 判断等级 B' },
         { id: 'obj2', text: '🔥 布尔判断 passed' },
@@ -524,7 +524,7 @@ print(f"flat: {flat}")
       scene: { theme: 'forest', monster: 'dragon', totalObjectives: 6 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：推导式风暴\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 列表推导式\n# - 字典推导式\n# - 条件推导\n# - map/filter\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：推导式风暴\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 平方数列表\n# 2. 过滤偶数平方\n# 3. 字典推导式\n# 4. 字符串推导\n# 5. 条件过滤推导\n# 6. 嵌套推导（矩阵展平）\n#\n# 📌 期望输出（部分）：\n#   → squares: [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n#   → even_squares: [4, 16, 36, 64, 100]\n#   → square_dict: {1:\n#   → flat: [1, 2, 3, 4, 5, 6, 7, 8, 9]\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 平方数列表' },
         { id: 'obj2', text: '🔥 过滤偶数平方' },
@@ -608,7 +608,7 @@ print(f"r4_error: {r4['error']}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：路由之门\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 路由设计\n# - HTTP 方法\n# - 字典映射\n# - 函数分发\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：路由之门\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. GET /users 路由\n# 2. GET /users/1 路由\n# 3. POST 创建用户\n# 4. 404 处理\n#\n# 📌 期望输出（部分）：\n#   → r2: Alice\n#   → r3_created: True\n#   → r4_error: 404\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 GET /users 路由' },
         { id: 'obj2', text: '🔥 GET /users/1 路由' },
@@ -701,7 +701,7 @@ print(f"temp07: {r2}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Token 解码器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Token 概念\n# - 消息格式\n# - Temperature\n# - 分词\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Token 解码器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Token 估算（英文）\n# 2. Token 估算（中文更多）\n# 3. 实现费用计算\n# 4. 计算 gpt-4o-mini 省多少钱\n# 5. Temperature 效果\n#\n# 📌 期望输出（部分）：\n#   → cn_tokens:\n#   → gpt4_cost: 0.0600\n#   → savings: 99%\n#   → temp0: Hello\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Token 估算（英文）' },
         { id: 'obj2', text: '🔥 Token 估算（中文更多）' },
@@ -784,7 +784,7 @@ print(f"score_good: {s2}")
       scene: { theme: 'maze', monster: 'skeleton', totalObjectives: 3 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Prompt 工程站\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Prompt 模板\n# - Few-shot\n# - f-string 模板\n# - 结构化输出\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Prompt 工程站\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 基础消息构建\n# 2. Few-shot 消息\n# 3. Prompt 质量评分\n#\n# 📌 期望输出（部分）：\n#   → fewshot_len: 6\n#   → score_good: 100\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 基础消息构建' },
         { id: 'obj2', text: '🔥 Few-shot 消息' },
@@ -865,7 +865,7 @@ print(f"top2: {results[1][0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 3 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：向量空间站\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 向量运算\n# - 余弦相似度\n# - 点积\n# - 模长\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：向量空间站\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 余弦相似度（相同向量=1）\n# 2. 正交向量相似度=0\n# 3. 搜索最相关文档\n#\n# 📌 期望输出（部分）：\n#   → sim_same: 1.00\n#   → sim_ortho: 0.00\n#   → top1: 深度学习\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 余弦相似度（相同向量=1）' },
         { id: 'obj2', text: '🔥 正交向量相似度=0' },
@@ -968,7 +968,7 @@ print(f"prompt_has_query: {'什么是RAG' in prompt}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 3 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：RAG 引擎\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 文本分割\n# - 检索增强\n# - Top-K 排序\n# - RAG 流程\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：RAG 引擎\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 文本分割（重叠切片）\n# 2. RAG 搜索返回结果\n# 3. 生成带上下文的 Prompt\n#\n# 📌 期望输出（部分）：\n#   → chunks_count:\n#   → top_similarity:\n#   → prompt_has_context: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 文本分割（重叠切片）' },
         { id: 'obj2', text: '🔥 RAG 搜索返回结果' },
@@ -1071,7 +1071,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Agent 状态机\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - ReAct 模式\n# - 状态机\n# - Function Calling\n# - 工具调用\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Agent 状态机\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3 个工具注册\n# 2. Agent 调用天气工具\n# 3. Agent 调用计算器\n# 4. Agent 执行追踪\n#\n# 📌 期望输出（部分）：\n#   → tools_count: 3\n#   → weather: 晴天 25°C\n#   → calc: 1024\n#   → trace_len: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3 个工具注册' },
         { id: 'obj2', text: '🔥 Agent 调用天气工具' },
@@ -1116,7 +1116,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'maze', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：循环旋涡\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - for 循环\n# - range()\n# - while 循环\n# - break/continue\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：循环旋涡\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. enumerate 打印英雄\n# 2. 嵌套循环乘法表\n# 3. while+break 找56\n# 4. continue 过滤\n# 5. 累加奇数超50\n#\n# 📌 期望输出（部分）：\n#   → hero_4: Diana\n#   → table_len: 6\n#   → div7: 56\n#   → filtered_count: 13\n#   → odd_count: 5\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 enumerate 打印英雄' },
         { id: 'obj2', text: '🔥 嵌套循环乘法表' },
@@ -1158,7 +1158,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：异常深渊\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - try/except\n# - raise\n# - 自定义异常\n# - finally\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：异常深渊\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. ZeroDivisionError捕获\n# 2. TypeError捕获\n# 3. finally执行\n# 4. 自定义异常\n# 5. 异常携带数据\n#\n# 📌 期望输出（部分）：\n#   → r2: 除零错误\n#   → r3: 类型错误\n#   → read_status: 成功\n#   → read_status: 键不存在\n#   → error: 100\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 ZeroDivisionError捕获' },
         { id: 'obj2', text: '🔥 TypeError捕获' },
@@ -1200,7 +1200,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：装饰器塔\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 装饰器基础\n# - functools.wraps\n# - 带参装饰器\n# - 高阶函数\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：装饰器塔\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 计时装饰器\n# 2. 缓存fib(10)=55\n# 3. 缓存命中\n# 4. 管理员通过\n# 5. 权限拒绝\n#\n# 📌 期望输出（部分）：\n#   → add: 30\n#   → fib10: 55\n#   → cached: True\n#   → admin: 已删除 Bob\n#   → denied: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 计时装饰器' },
         { id: 'obj2', text: '🔥 缓存fib(10)=55' },
@@ -1242,7 +1242,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 Python 终极试炼\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 综合运用\n# - 函数\n# - 类\n# - 循环\n# - 条件\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 Python 终极试炼\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. chain=(10+5)*3=45\n# 2. 2次操作历史\n# 3. pipeline流转\n# 4. safe正常\n# 5. safe捕获异常\n#\n# 📌 期望输出（部分）：\n#   → chain: 45\n#   → history: 2\n#   → pipeline: 12\n#   → safe_ok: True\n#   → safe_err: False\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 chain=(10+5)*3=45' },
         { id: 'obj2', text: '🔥 2次操作历史' },
@@ -1284,7 +1284,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Pydantic 验证塔\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - dataclass\n# - 数据验证\n# - 类型检查\n# - 默认值\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Pydantic 验证塔\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 合法验证通过\n# 2. 空名称失败\n# 3. 负价格错误\n# 4. 批量通过2\n# 5. 批量失败2\n#\n# 📌 期望输出（部分）：\n#   → r1_valid: True\n#   → r2_valid: False\n#   → r3_error: True\n#   → batch_valid: 2\n#   → batch_invalid: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 合法验证通过' },
         { id: 'obj2', text: '🔥 空名称失败' },
@@ -1326,7 +1326,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：数据库地牢\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - CRUD 操作\n# - 数据建模\n# - 查询过滤\n# - 排序\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：数据库地牢\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 删后剩2条\n# 2. 1个admin\n# 3. 高分筛选\n# 4. Bob更新88\n# 5. Charlie删除\n#\n# 📌 期望输出（部分）：\n#   → total: 2\n#   → admins: 1\n#   → high_scorers: 1\n#   → bob_score: 88\n#   → charlie: None\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 删后剩2条' },
         { id: 'obj2', text: '🔥 1个admin' },
@@ -1368,7 +1368,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：中间件链\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 中间件\n# - 管道模式\n# - 错误处理\n# - CORS\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：中间件链\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 认证通过\n# 2. CORS正确\n# 3. 日志记录\n# 4. POST方法\n# 5. 无token拦截\n#\n# 📌 期望输出（部分）：\n#   → auth: authenticated\n#   → cors: True\n#   → logged: True\n#   → method: POST\n#   → blocked: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 认证通过' },
         { id: 'obj2', text: '🔥 CORS正确' },
@@ -1410,7 +1410,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：分页排序\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 分页\n# - 排序\n# - Query 参数\n# - offset/limit\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：分页排序\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Diana排第一\n# 2. 3页\n# 3. 第三页2条\n# 4. 85+分5人\n# 5. 总8条\n#\n# 📌 期望输出（部分）：\n#   → top1: Diana\n#   → pages: 3\n#   → p3_count: 2\n#   → high_count: 5\n#   → total: 8\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Diana排第一' },
         { id: 'obj2', text: '🔥 3页' },
@@ -1453,7 +1453,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'guard', totalObjectives: 6 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：JWT 认证关\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - JWT Token\n# - 认证流程\n# - Bearer Auth\n# - Depends\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：JWT 认证关\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 注册成功\n# 2. 重复注册失败\n# 3. 登录成功\n# 4. 错误密码\n# 5. Token验证\n#\n# 📌 期望输出（部分）：\n#   → reg: True\n#   → dup: False\n#   → login: True\n#   → bad: False\n#   → protected: alice\n#   → ...还有 1 项\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 注册成功' },
         { id: 'obj2', text: '🔥 重复注册失败' },
@@ -1500,7 +1500,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：ORM 映射\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - ORM 概念\n# - dataclass\n# - 序列化\n# - 反序列化\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：ORM 映射\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 创建3个Todo\n# 2. 完成1个\n# 3. 优先级排序\n# 4. 摘要统计\n# 5. 剩余2待办\n#\n# 📌 期望输出（部分）：\n#   → created: 3\n#   → done: 1\n#   → top_priority: 学AI\n#   → t1_done: True\n#   → pending: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 创建3个Todo' },
         { id: 'obj2', text: '🔥 完成1个' },
@@ -1542,7 +1542,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'maze', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：关联查询\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 关联查询\n# - JOIN 模拟\n# - 数据聚合\n# - 外键\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：关联查询\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 工程部2人\n# 2. Alice有2单\n# 3. Alice总额300\n# 4. 3人关联\n# 5. Charlie总额0\n#\n# 📌 期望输出（部分）：\n#   → eng_count: 2\n#   → alice_orders: 2\n#   → alice_total: 300\n#   → joined_len: 3\n#   → charlie_total: 0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 工程部2人' },
         { id: 'obj2', text: '🔥 Alice有2单' },
@@ -1584,7 +1584,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 Shortly 短链引擎\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 哈希映射\n# - URL 验证\n# - 短码生成\n# - CRUD\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 Shortly 短链引擎\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 短码6位\n# 2. 无效URL报错\n# 3. 还原URL\n# 4. 点击计数\n# 5. 统计正确\n#\n# 📌 期望输出（部分）：\n#   → code_len: 6\n#   → error: True\n#   → resolved: True\n#   → clicks: 2\n#   → total: 1\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 短码6位' },
         { id: 'obj2', text: '🔥 无效URL报错' },
@@ -1624,7 +1624,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 3 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Streaming API\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - SSE\n# - 事件流\n# - 回调处理\n# - 异步模拟\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Streaming API\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 分块数量\n# 2. 首个分块\n# 3. 还原完整\n# 4. 计算分块\n# 5. 长度一致\n# 6. 完整数据通过\n# 7. 缺2字段\n# 8. 类型错误\n# 9. 类型错误信息\n# 10. 无错误\n#\n# 📌 期望输出（部分）：\n#   → first: Hello World, th\n#   → restored: True\n#   → full_len: 57\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 分块数量' },
         { id: 'obj2', text: '🔥 首个分块' },
@@ -1669,7 +1669,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：结构化输出\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - JSON Schema\n# - Pydantic\n# - 结构化输出\n# - 类型安全\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：结构化输出\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 完整数据通过\n# 2. 缺2字段\n# 3. 类型错误\n# 4. 类型错误信息\n# 5. 无错误\n#\n# 📌 期望输出（部分）：\n#   → r1_valid: True\n#   → r2_errors: 2\n#   → r3_valid: False\n#   → r3_type_err: True\n#   → r1_errors: 0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 完整数据通过' },
         { id: 'obj2', text: '🔥 缺2字段' },
@@ -1711,7 +1711,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：向量数据库\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 向量存储\n# - CRUD\n# - 索引\n# - 批量操作\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：向量数据库\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 存储4条\n# 2. 搜索2条\n# 3. 最匹配PythonAI\n# 4. 分数>0.5\n# 5. 99不存在\n#\n# 📌 期望输出（部分）：\n#   → count: 4\n#   → results: 2\n#   → top: PythonAI\n#   → score: True\n#   → del_miss: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 存储4条' },
         { id: 'obj2', text: '🔥 搜索2条' },
@@ -1752,7 +1752,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 Prompt Lab 挑战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 综合：Token\n# - Prompt 模板\n# - 向量搜索\n# - 评分系统\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 Prompt Lab 挑战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 分块正确\n# 2. 搜索2条\n# 3. 分数>0\n# 4. 含Python\n# 5. DB大小\n#\n# 📌 期望输出（部分）：\n#   → results: 2\n#   → top_score: True\n#   → has_python: True\n#   → db_size: \n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 分块正确' },
         { id: 'obj2', text: '🔥 搜索2条' },
@@ -1797,7 +1797,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Streaming 河流\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 生成器\n# - yield\n# - 迭代器\n# - Streaming\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Streaming 河流\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 4条消息\n# 2. 最近2条\n# 3. 最后assistant\n# 4. 首条你好\n# 5. 清空0\n#\n# 📌 期望输出（部分）：\n#   → total: 4\n#   → recent: 2\n#   → last_role: assistant\n#   → first_msg: 你好\n#   → after_clear: 0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 4条消息' },
         { id: 'obj2', text: '🔥 最近2条' },
@@ -1838,7 +1838,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：对话管理器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 对话历史\n# - 消息管理\n# - Token 估算\n# - 上下文窗口\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：对话管理器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 格式化4条\n# 2. 用户emoji\n# 3. 系统emoji\n# 4. 截断正确\n# 5. token计数\n#\n# 📌 期望输出（部分）：\n#   → formatted: 4\n#   → has_emoji: True\n#   → system: True\n#   → token_test: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 格式化4条' },
         { id: 'obj2', text: '🔥 用户emoji' },
@@ -1879,7 +1879,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：多模型适配\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 策略模式\n# - 适配器\n# - 工厂方法\n# - 多模型\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：多模型适配\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. GPT响应\n# 2. Claude响应\n# 3. 未知模型报错\n# 4. 2个适配器\n# 5. 含gpt\n#\n# 📌 期望输出（部分）：\n#   → gpt: GPT: Hello World\n#   → claude: Claude: Test prompt\n#   → error: True\n#   → adapters: 2\n#   → has_gpt: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 GPT响应' },
         { id: 'obj2', text: '🔥 Claude响应' },
@@ -1921,7 +1921,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：AI 防护盾\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Prompt 注入\n# - 输入过滤\n# - 内容审核\n# - Guardrails\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：AI 防护盾\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 正常通过\n# 2. hack拦截\n# 3. 原因含hack\n# 4. 超长拦截\n# 5. 原因含超长\n#\n# 📌 期望输出（部分）：\n#   → r1_safe: True\n#   → r2_safe: False\n#   → r2_reason: True\n#   → r3_safe: False\n#   → r3_reason: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 正常通过' },
         { id: 'obj2', text: '🔥 hack拦截' },
@@ -1962,7 +1962,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：成本优化器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 模型路由\n# - 语义缓存\n# - Token 估算\n# - 成本控制\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：成本优化器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 缓存命中\n# 2. 缓存未命中\n# 3. 命中率\n# 4. 成本计算\n# 5. 总请求数\n#\n# 📌 期望输出（部分）：\n#   → cached: answer1\n#   → miss: None\n#   → cost: 2.0\n#   → total: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 缓存命中' },
         { id: 'obj2', text: '🔥 缓存未命中' },
@@ -2003,7 +2003,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Markdown 解析器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 正则表达式\n# - Markdown\n# - 文本处理\n# - 替换\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Markdown 解析器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 1个h1\n# 2. 1个h2\n# 3. 2个li\n# 4. 1个p\n# 5. 有h3\n#\n# 📌 期望输出（部分）：\n#   → h1: 1\n#   → h2: 1\n#   → li: 2\n#   → p: 1\n#   → has_h3: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 1个h1' },
         { id: 'obj2', text: '🔥 1个h2' },
@@ -2045,7 +2045,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：对话持久化\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - JSON 序列化\n# - 数据持久化\n# - 对话管理\n# - CRUD\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：对话持久化\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 2个对话\n# 2. chat1有2条\n# 3. 导出非空\n# 4. 含chat2\n# 5. 空历史\n#\n# 📌 期望输出（部分）：\n#   → convs: 2\n#   → chat1_msgs: 2\n#   → exported: True\n#   → has_chat2: True\n#   → empty: 0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 2个对话' },
         { id: 'obj2', text: '🔥 chat1有2条' },
@@ -2086,7 +2086,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'dragon', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 MiniChat 全栈战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Streaming\n# - 对话管理\n# - Markdown\n# - 综合\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 MiniChat 全栈战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 聊天回复\n# 2. 计算1024\n# 3. 大写HELLO\n# 4. 未知工具\n# 5. 上下文2条\n#\n# 📌 期望输出（部分）：\n#   → calc: 1024\n#   → upper: HELLO\n#   → error: True\n#   → context: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 聊天回复' },
         { id: 'obj2', text: '🔥 计算1024' },
@@ -2131,7 +2131,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：文档解析器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 文本提取\n# - 结构化解析\n# - 元数据\n# - 清洗\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：文档解析器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3个章节\n# 2. 第一章Python\n# 3. 首章2行\n# 4. 最后实战\n# 5. 总5行\n#\n# 📌 期望输出（部分）：\n#   → sections: 3\n#   → first: Python基础\n#   → content: 2\n#   → last: 实战项目\n#   → total_lines: 5\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3个章节' },
         { id: 'obj2', text: '🔥 第一章Python' },
@@ -2173,7 +2173,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：重排序算法\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - BM25\n# - 重排序\n# - TF-IDF\n# - 相关性\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：重排序算法\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Python排第一\n# 2. 4条结果\n# 3. 分数>0\n# 4. 末尾分数低\n# 5. 全部>=0\n#\n# 📌 期望输出（部分）：\n#   → top: True\n#   → count: 4\n#   → scored: True\n#   → last: True\n#   → all: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Python排第一' },
         { id: 'obj2', text: '🔥 4条结果' },
@@ -2215,7 +2215,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：知识库管理\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 知识库隔离\n# - 多库管理\n# - 命名空间\n# - 搜索\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：知识库管理\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 总3文档\n# 2. Python匹配2\n# 3. python标签2\n# 4. JS匹配1\n# 5. Ruby匹配0\n#\n# 📌 期望输出（部分）：\n#   → total: 3\n#   → python_docs: 2\n#   → tagged: 2\n#   → js_docs: 1\n#   → empty: 0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 总3文档' },
         { id: 'obj2', text: '🔥 Python匹配2' },
@@ -2257,7 +2257,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：可观测塔\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Trace 追踪\n# - LangSmith\n# - 日志结构化\n# - 性能监控\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：可观测塔\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 2个span\n# 2. 150tokens\n# 3. 有duration\n# 4. 首span=query\n# 5. 1个指标\n#\n# 📌 期望输出（部分）：\n#   → spans: 2\n#   → tokens: 150\n#   → has_duration: True\n#   → span_name: query\n#   → metrics_count: 1\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 2个span' },
         { id: 'obj2', text: '🔥 150tokens' },
@@ -2297,7 +2297,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 DocMind 知识引擎\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - RAG 全流程\n# - 引用追踪\n# - 文档解析\n# - 综合\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 DocMind 知识引擎\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Python找到1+条\n# 2. AI找到1+条\n# 3. Go找到0条\n# 4. 3次查询\n# 5. 知识库3条\n#\n# 📌 期望输出（部分）：\n#   → 找到\n#   → history: 3\n#   → kb_size: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Python找到1+条' },
         { id: 'obj2', text: '🔥 AI找到1+条' },
@@ -2337,7 +2337,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆🏆 终极毕业大考\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Python\n# - API\n# - RAG\n# - Agent\n# - 综合\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆🏆 终极毕业大考\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 成绩A\n# 2. 130星\n# 3. 4项强技能\n# 4. 2个项目\n# 5. 名字小明\n#\n# 📌 期望输出（部分）：\n#   → grade: A\n#   → stars: 130\n#   → strong: 4\n#   → projects: 2\n#   → name: 小明\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 成绩A' },
         { id: 'obj2', text: '🔥 130星' },
@@ -2379,7 +2379,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：ReAct 循环\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - ReAct\n# - 推理链\n# - 观察循环\n# - 决策\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：ReAct 循环\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 计算结果\n# 2. 搜索含Python\n# 3. 回答类型\n# 4. 3步追踪\n# 5. 首步calc\n#\n# 📌 期望输出（部分）：\n#   → r1: 计算结果: 42\n#   → r2: True\n#   → r3: True\n#   → trace: 3\n#   → actions: calc\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 计算结果' },
         { id: 'obj2', text: '🔥 搜索含Python' },
@@ -2421,7 +2421,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：LangGraph 状态机\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 状态机\n# - LangGraph\n# - 条件分支\n# - 节点图\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：LangGraph 状态机\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 分类question\n# 2. 已处理\n# 3. 响应正确\n# 4. 3步路径\n# 5. 3个节点\n#\n# 📌 期望输出（部分）：\n#   → type: question\n#   → processed: True\n#   → response: True\n#   → path: 3\n#   → nodes: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 分类question' },
         { id: 'obj2', text: '🔥 已处理' },
@@ -2463,7 +2463,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：MCP 协议\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - MCP\n# - 工具注册\n# - 协议设计\n# - JSON Schema\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：MCP 协议\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 加法30\n# 2. 大写HELLO\n# 3. 未知报错\n# 4. 3次调用\n# 5. 2次成功\n#\n# 📌 期望输出（部分）：\n#   → add: 30\n#   → upper: HELLO\n#   → error: True\n#   → total: 3\n#   → success: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 加法30' },
         { id: 'obj2', text: '🔥 大写HELLO' },
@@ -2505,7 +2505,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 ResearchBot 终极战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Agent\n# - RAG\n# - 工具链\n# - 状态管理\n# - 综合\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 ResearchBot 终极战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Python匹配2\n# 2. AI匹配1\n# 3. 总发现3\n# 4. 2个来源\n# 5. 知识库3\n#\n# 📌 期望输出（部分）：\n#   → py_count: 2\n#   → ai_count: 1\n#   → total: 3\n#   → sources: 2\n#   → kb_size: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Python匹配2' },
         { id: 'obj2', text: '🔥 AI匹配1' },
@@ -2547,7 +2547,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：浏览器端 AI\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 模型量化\n# - 推理优化\n# - ONNX\n# - WebAssembly\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：浏览器端 AI\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 正面预测\n# 2. 负面预测\n# 3. 5参数\n# 4. 量化命名\n# 5. 模型大小\n#\n# 📌 期望输出（部分）：\n#   → pred1: 正面\n#   → pred2: 负面\n#   → params: 5\n#   → name_q: True\n#   → size: 20\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 正面预测' },
         { id: 'obj2', text: '🔥 负面预测' },
@@ -2589,7 +2589,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：多模态融合\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 多模态\n# - Vision API\n# - 消息格式\n# - 图文理解\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：多模态融合\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 文本3词\n# 2. 图片宽640\n# 3. 音频不支持\n# 4. 2种模态\n# 5. 文本14字符\n#\n# 📌 期望输出（部分）：\n#   → text_words: 3\n#   → img_w: 640\n#   → audio_err: True\n#   → supported: 2\n#   → text_chars: 14\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 文本3词' },
         { id: 'obj2', text: '🔥 图片宽640' },
@@ -2631,7 +2631,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：AI 评估体系\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 准确率\n# - 召回率\n# - F1 分数\n# - 混淆矩阵\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：AI 评估体系\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. TP=4\n# 2. 精确率\n# 3. 召回率\n# 4. F1分数\n# 5. 总数10\n#\n# 📌 期望输出（部分）：\n#   → tp: 4\n#   → precision:\n#   → recall:\n#   → f1:\n#   → total: 10\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 TP=4' },
         { id: 'obj2', text: '🔥 精确率' },
@@ -2672,7 +2672,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'skeleton', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：AI 测试场\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Golden Set\n# - LLM 评估\n# - 关键词匹配\n# - 回归测试\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：AI 测试场\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 平均分\n# 2. 通过数\n# 3. 总数3\n# 4. t1通过\n# 5. t1满分\n#\n# 📌 期望输出（部分）：\n#   → passed:\n#   → total: 3\n#   → t1_pass: True\n#   → t1_score: 100\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 平均分' },
         { id: 'obj2', text: '🔥 通过数' },
@@ -2712,7 +2712,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'fortress', monster: 'skeleton', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：作品集生成器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Markdown 生成\n# - 数据聚合\n# - 报告模板\n# - 项目展示\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：作品集生成器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. RAG排第一\n# 2. AI项目2个\n# 3. 总160星\n# 4. 5个标签\n# 5. 3个项目\n#\n# 📌 期望输出（部分）：\n#   → top: RAG系统\n#   → ai_count: 2\n#   → total_stars: 160\n#   → projects: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 RAG排第一' },
         { id: 'obj2', text: '🔥 AI项目2个' },
@@ -2753,7 +2753,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：部署发射台\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Docker\n# - 环境变量\n# - 端口映射\n# - CI/CD\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：部署发射台\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 部署完成\n# 2. 3个步骤\n# 3. 密钥隐藏\n# 4. Dockerfile有FROM\n# 5. 2个环境变量\n#\n# 📌 期望输出（部分）：\n#   → status: deployed\n#   → steps: 3\n#   → secret: ***\n#   → has_from: True\n#   → env_count: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 部署完成' },
         { id: 'obj2', text: '🔥 3个步骤' },
@@ -2794,7 +2794,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：FastAPI 起航\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - @app.get\n# - @app.post\n# - 路径参数\n# - 查询参数\n# - uvicorn\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：FastAPI 起航\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. MacBook\n# 2. 搜索phone\n# 3. 分类tech\n# 4. 201状态\n# 5. 订单总额\n#\n# 📌 期望输出（部分）：\n#   → product: MacBook\n#   → search_q: phone\n#   → category: tech\n#   → order_status: 201\n#   → order_total: 600\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 MacBook' },
         { id: 'obj2', text: '🔥 搜索phone' },
@@ -2836,7 +2836,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Pydantic 请求体\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - BaseModel\n# - Field 约束\n# - field_validator\n# - 嵌套模型\n# - 响应模型\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Pydantic 请求体\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 最终价89\n# 2. 总额388\n# 3. 买家Alice\n# 4. 价格校验\n# 5. 折扣校验\n#\n# 📌 期望输出（部分）：\n#   → p1_final: 89\n#   → total: 388\n#   → buyer: Alice\n#   → invalid: True\n#   → bad_discount: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 最终价89' },
         { id: 'obj2', text: '🔥 总额388' },
@@ -2878,7 +2878,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：依赖注入\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Depends()\n# - 认证依赖\n# - 数据库注入\n# - 依赖链\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：依赖注入\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Alice名字\n# 2. 数据库连接\n# 3. 无Token401\n# 4. 管理面板\n# 5. Bob被拒403\n#\n# 📌 期望输出（部分）：\n#   → name: Alice\n#   → db_ok: True\n#   → no_auth: 401\n#   → admin: True\n#   → forbidden: 403\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Alice名字' },
         { id: 'obj2', text: '🔥 数据库连接' },
@@ -2918,7 +2918,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'guard', totalObjectives: 4 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：错误处理与CORS\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - HTTPException\n# - 自定义异常处理器\n# - CORSMiddleware\n# - 请求校验错误\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：错误处理与CORS\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 正常创建\n# 2. 业务错误码\n# 3. 验证错误数\n# 4. 500崩溃\n#\n# 📌 期望输出（部分）：\n#   → ok: Book\n#   → biz_code: ITEM_BANNED\n#   → valid_err: 2\n#   → crash: 500\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 正常创建' },
         { id: 'obj2', text: '🔥 业务错误码' },
@@ -2958,7 +2958,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：🏆 FastAPI 全栈战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - FastAPI 综合\n# - CRUD API\n# - Pydantic 模型\n# - 依赖注入\n# - 错误处理\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：🏆 FastAPI 全栈战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 注册alice\n# 2. 3个任务\n# 3. 优先级5有2个\n# 4. 完成标记\n# 5. 401未认证\n# 6. 422验证失败\n# 7. 有Token\n#\n# 📌 期望输出（部分）：\n#   → registered: alice\n#   → total: 3\n#   → p5: 2\n#   → done: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 注册alice' },
         { id: 'obj2', text: '🔥 3个任务' },
@@ -3000,7 +3000,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：asyncio 异步入门\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - async def\n# - await\n# - asyncio.gather\n# - asyncio.sleep\n# - 并发 vs 并行\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：asyncio 异步入门\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 生产消费3条\n# 2. 首条processed_a\n# 3. 并发控制5条\n# 4. 1个异常\n# 5. 总数3\n#\n# 📌 期望输出（部分）：\n#   → pc_len: 3\n#   → pc_first: processed_a\n#   → cc_len: 5\n#   → sg_errors: 1\n#   → sg_total: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 生产消费3条' },
         { id: 'obj2', text: '🔥 首条processed_a' },
@@ -3042,7 +3042,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：httpx 异步请求\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - httpx.AsyncClient\n# - 并发请求\n# - 超时控制\n# - 错误重试\n# - response 处理\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：httpx 异步请求\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 批量获取3个用户\n# 2. 第一个用户名正确\n# 3. 健康检查通过\n# 4. 重试后仍失败\n#\n# 📌 期望输出（部分）：\n#   → users: 3\n#   → first: User_1\n#   → health: ok\n#   → retry_fail: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 批量获取3个用户' },
         { id: 'obj2', text: '🔥 第一个用户名正确' },
@@ -3082,7 +3082,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：pathlib 文件探索\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - pathlib.Path\n# - 文件读写\n# - JSON 持久化\n# - 目录遍历\n# - 文件元信息\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：pathlib 文件探索\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3个py文件\n# 2. 2个js文件\n# 3. 3种类型\n# 4. 报告总数6\n# 5. 重命名成功\n#\n# 📌 期望输出（部分）：\n#   → py_count: 3\n#   → js_count: 2\n#   → total_types: 3\n#   → report_total: 6\n#   → renamed: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3个py文件' },
         { id: 'obj2', text: '🔥 2个js文件' },
@@ -3124,7 +3124,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：LangChain 实战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - ChatPromptTemplate\n# - LLMChain\n# - OutputParser\n# - Memory\n# - LCEL\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：LangChain 实战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 翻译链返回字符串\n# 2. 翻译包含 Translation\n# 3. 摘要链正确\n# 4. 记忆5条消息\n# 5. LLM 调用2次\n#\n# 📌 期望输出（部分）：\n#   → translate: str\n#   → has_content: True\n#   → summary: True\n#   → memory_len: 5\n#   → llm_calls: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 翻译链返回字符串' },
         { id: 'obj2', text: '🔥 翻译包含 Translation' },
@@ -3165,7 +3165,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'slime', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：字符串炼金术\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - split\n# - join\n# - strip\n# - replace\n# - f-string格式化\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：字符串炼金术\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. CSV解析3行\n# 2. 模板渲染\n# 3. Python计数3\n# 4. 9个词\n# 5. 文件名提取\n#\n# 📌 期望输出（部分）：\n#   → rows: 3\n#   → render: Hello Alice\n#   → python_count: 3\n#   → words: 9\n#   → filename: main.py\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 CSV解析3行' },
         { id: 'obj2', text: '🔥 模板渲染' },
@@ -3206,7 +3206,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：列表高级操作\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - sorted\n# - enumerate\n# - zip\n# - 解包\n# - 列表运算\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：列表高级操作\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Bob最高分\n# 2. 正数4个\n# 3. 构建用户dict\n# 4. 交换ab\n# 5. 扁平化6个\n#\n# 📌 期望输出（部分）：\n#   → top_student: Bob\n#   → positive_count: 4\n#   → user_name: Alice\n#   → swapped: a=20, b=10\n#   → flat_len: 6\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Bob最高分' },
         { id: 'obj2', text: '🔥 正数4个' },
@@ -3247,7 +3247,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：字典大师\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Counter\n# - defaultdict\n# - 字典推导式\n# - 字典合并\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：字典大师\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. INFO 3条\n# 2. ERROR 2条\n# 3. 及格3人\n# 4. 反转China→CN\n# 5. 深度合并保留host\n#\n# 📌 期望输出（部分）：\n#   → info: 3\n#   → errors: 2\n#   → passed: 3\n#   → china_code: CN\n#   → db_host: localhost\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 INFO 3条' },
         { id: 'obj2', text: '🔥 ERROR 2条' },
@@ -3288,7 +3288,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：函数魔法\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - lambda\n# - map\n# - filter\n# - 闭包\n# - 高阶函数\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：函数魔法\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 乘积120\n# 2. 平方16\n# 3. 立方8\n# 4. 重复3次\n# 5. fib20=6765\n#\n# 📌 期望输出（部分）：\n#   → product: 120\n#   → sq4: 16\n#   → cu2: 8\n#   → repeat: 3\n#   → fib20: 6765\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 乘积120' },
         { id: 'obj2', text: '🔥 平方16' },
@@ -3329,7 +3329,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：OOP 继承链\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 继承\n# - super()\n# - 多态\n# - __str__\n# - isinstance\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：OOP 继承链\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 圆面积78.5\n# 2. 矩形24\n# 3. 华氏212\n# 4. 冰点32\n# 5. 总面积102.5\n#\n# 📌 期望输出（部分）：\n#   → circle: 78.5\n#   → rect: 24.0\n#   → f: 212.0\n#   → freeze: 32.0\n#   → total: 102.5\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 圆面积78.5' },
         { id: 'obj2', text: '🔥 矩形24' },
@@ -3370,7 +3370,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：生成器与迭代器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - yield\n# - 生成器表达式\n# - next()\n# - 惰性计算\n# - 生成器管道\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：生成器与迭代器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3行文本\n# 2. Hello\n# 3. 4批\n# 4. 最后批1个\n# 5. 累加60\n#\n# 📌 期望输出（部分）：\n#   → lines: 3\n#   → first: Hello\n#   → batches: 4\n#   → chain: 6\n#   → acc: 60\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3行文本' },
         { id: 'obj2', text: '🔥 Hello' },
@@ -3411,7 +3411,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：上下文管理器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - with\n# - __enter__/__exit__\n# - contextmanager\n# - 资源管理\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：上下文管理器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 成功提交2条\n# 2. 1次提交\n# 3. 失败回滚不增\n# 4. 1次回滚\n# 5. 捕获输出\n#\n# 📌 期望输出（部分）：\n#   → data: 2\n#   → commits: 1\n#   → after_fail: 2\n#   → rollbacks: 1\n#   → captured: captured!\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 成功提交2条' },
         { id: 'obj2', text: '🔥 1次提交' },
@@ -3452,7 +3452,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：正则表达式\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - re.findall\n# - re.match\n# - re.sub\n# - re.split\n# - 分组\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：正则表达式\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 日期2025-03-23\n# 2. ERROR级别\n# 3. 3人提取\n# 4. 密码全通过\n# 5. 3个变量\n#\n# 📌 期望输出（部分）：\n#   → date: 2025-03-23\n#   → level: ERROR\n#   → count: 3\n#   → valid: True\n#   → vars: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 日期2025-03-23' },
         { id: 'obj2', text: '🔥 ERROR级别' },
@@ -3493,7 +3493,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Token 计费器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Token计算\n# - tiktoken\n# - 成本估算\n# - 模型对比\n# - 批量计费\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Token 计费器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 4次调用\n# 2. 还有余额\n# 3. 3种模型\n# 4. 状态OK\n# 5. 有花费\n#\n# 📌 期望输出（部分）：\n#   → calls: 4\n#   → remaining: True\n#   → models: 3\n#   → alert: OK\n#   → spent: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 4次调用' },
         { id: 'obj2', text: '🔥 还有余额' },
@@ -3534,7 +3534,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Few-shot 提示\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Few-shot\n# - 示例构造\n# - 模式匹配\n# - 格式化输出\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Few-shot 提示\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3个模板\n# 2. 分类含查询\n# 3. 限制2示例\n# 4. 提取全量\n# 5. 翻译已注册\n#\n# 📌 期望输出（部分）：\n#   → templates: 3\n#   → classify_has_q: True\n#   → p1_short: True\n#   → extract_full: True\n#   → has_translate: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3个模板' },
         { id: 'obj2', text: '🔥 分类含查询' },
@@ -3575,7 +3575,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：CoT 思维链\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Chain-of-Thought\n# - 分步推理\n# - 推理链\n# - 自我验证\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：CoT 思维链\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 2条推理链\n# 2. 全部验证\n# 3. 平均深度2.5\n# 4. 数学答案14\n# 5. Python验证通过\n#\n# 📌 期望输出（部分）：\n#   → total: 2\n#   → verified: 2\n#   → avg_depth: 2.5\n#   → c0_answer: 14\n#   → c1_verified: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 2条推理链' },
         { id: 'obj2', text: '🔥 全部验证' },
@@ -3616,7 +3616,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：文本分割器\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - chunk_size\n# - overlap\n# - 按段落分割\n# - 递归分割\n# - 分割策略\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：文本分割器\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 多个chunk\n# 2. 平均长度>0\n# 3. 元数据完整\n# 4. 来源wiki\n# 5. 首个ID=0\n#\n# 📌 期望输出（部分）：\n#   → chunks:\n#   → avg_len: True\n#   → metadata: True\n#   → source: wiki\n#   → first_id: 0\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 多个chunk' },
         { id: 'obj2', text: '🔥 平均长度>0' },
@@ -3657,7 +3657,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：余弦相似度\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 余弦相似度\n# - 向量计算\n# - 语义搜索\n# - Embedding\n# - 相关性排序\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：余弦相似度\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 搜索到结果\n# 2. 最相关Python\n# 3. 总数5\n# 4. 4维向量\n# 5. 高分匹配\n#\n# 📌 期望输出（部分）：\n#   → found:\n#   → top: Python\n#   → total: 5\n#   → dims: 4\n#   → top_score: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 搜索到结果' },
         { id: 'obj2', text: '🔥 最相关Python' },
@@ -3698,7 +3698,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：RAG 管道实战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 文档切分\n# - 向量化\n# - 语义检索\n# - 上下文拼接\n# - 答案生成\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：RAG 管道实战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 多来源\n# 2. 3条上下文\n# 3. 综合回答\n# 4. 4篇文档\n# 5. 阈值0.1\n#\n# 📌 期望输出（部分）：\n#   → sources:\n#   → context:\n#   → has_answer: True\n#   → total_docs: 4\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 多来源' },
         { id: 'obj2', text: '🔥 3条上下文' },
@@ -3738,7 +3738,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：URL 短链生成\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Base62\n# - MD5哈希\n# - 碰撞检测\n# - 双向映射\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：URL 短链生成\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 自定义短码\n# 2. 5次点击\n# 3. 最热py2025\n# 4. 最多5次\n# 5. 总数2\n#\n# 📌 期望输出（部分）：\n#   → custom: py2025\n#   → clicks: 5\n#   → top: py2025\n#   → top_clicks: 5\n#   → total: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 自定义短码' },
         { id: 'obj2', text: '🔥 5次点击' },
@@ -3779,7 +3779,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：用户认证系统\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 密码哈希\n# - JWT\n# - Token验证\n# - 注册登录\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：用户认证系统\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. Alice可删除\n# 2. Bob不可删\n# 3. Charlie可读\n# 4. Alice是admin\n# 5. Bob有2权限\n#\n# 📌 期望输出（部分）：\n#   → alice_del: True\n#   → bob_del: False\n#   → charlie_read: True\n#   → login: admin\n#   → bob_perms: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 Alice可删除' },
         { id: 'obj2', text: '🔥 Bob不可删' },
@@ -3820,7 +3820,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：SSE 聊天后端\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - SSE格式\n# - event/data/id\n# - 流式Token\n# - EventSource\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：SSE 聊天后端\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 模型gpt-4o\n# 2. 多个chunk\n# 3. 有文本\n# 4. 已开始\n# 5. 有字符\n#\n# 📌 期望输出（部分）：\n#   → model: gpt-4o\n#   → chunks:\n#   → has_text: True\n#   → started: True\n#   → total_chars: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 模型gpt-4o' },
         { id: 'obj2', text: '🔥 多个chunk' },
@@ -3861,7 +3861,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Agent 工具箱\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 工具注册\n# - 参数解析\n# - 错误处理\n# - 工具列表\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Agent 工具箱\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 计算14\n# 2. 用calc工具\n# 3. 翻译成功\n# 4. 6步轨迹\n# 5. 2次思考\n#\n# 📌 期望输出（部分）：\n#   → calc: 14\n#   → tool1: calc\n#   → translate: True\n#   → total_steps: 6\n#   → think_count: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 计算14' },
         { id: 'obj2', text: '🔥 用calc工具' },
@@ -3902,7 +3902,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：ORM 数据操作\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - ORM模式\n# - filter\n# - get/all\n# - update/delete\n# - to_dict\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：ORM 数据操作\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3条记录\n# 2. Alice邮箱\n# 3. Bob更新\n# 4. 有role列\n# 5. 默认user\n#\n# 📌 期望输出（部分）：\n#   → count: 3\n#   → alice: a@test.com\n#   → updated: bob@new.com\n#   → has_role: True\n#   → default_role: user\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3条记录' },
         { id: 'obj2', text: '🔥 Alice邮箱' },
@@ -3943,7 +3943,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'skeleton', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Prompt 注入防线\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 注入检测\n# - 输入净化\n# - 安全包装\n# - 攻击模式识别\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Prompt 注入防线\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 正常安全\n# 2. 注入拦截\n# 3. 泄露拦截\n# 4. 越狱分数3\n# 5. 4次扫描\n#\n# 📌 期望输出（部分）：\n#   → safe: True\n#   → inject: True\n#   → leak: True\n#   → jailbreak_sev: 3\n#   → scans: 4\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 正常安全' },
         { id: 'obj2', text: '🔥 注入拦截' },
@@ -3984,7 +3984,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Python 综合演练\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - OOP\n# - 装饰器\n# - 生成器\n# - 异常处理\n# - 推导式\n# - 排序\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Python 综合演练\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 7条日志\n# 2. 2个错误\n# 3. INFO最多\n# 4. 4条INFO\n# 5. 超时错误\n#\n# 📌 期望输出（部分）：\n#   → total: 7\n#   → errors: 2\n#   → top: INFO\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 7条日志' },
         { id: 'obj2', text: '🔥 2个错误' },
@@ -4023,7 +4023,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：FastAPI 全链路\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 路由\n# - Pydantic\n# - Depends\n# - HTTPException\n# - CRUD\n# - 查询参数\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：FastAPI 全链路\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 订单1总价75\n# 2. 订单2总价1500\n# 3. 全部2单\n# 4. 已付1单\n# 5. 客户Alice\n#\n# 📌 期望输出（部分）：\n#   → o1_total: 75\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 订单1总价75' },
         { id: 'obj2', text: '🔥 订单2总价1500' },
@@ -4060,7 +4060,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：AI 全链路\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Token\n# - Prompt\n# - Embedding\n# - 向量搜索\n# - RAG\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：AI 全链路\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 2条参考\n# 2. 有Token\n# 3. 2次查询\n# 4. 4条知识\n# 5. 有成本\n#\n# 📌 期望输出（部分）：\n#   → refs: 2\n#   → tokens: True\n#   → queries: 2\n#   → kb: 4\n#   → cost: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 2条参考' },
         { id: 'obj2', text: '🔥 有Token' },
@@ -4101,7 +4101,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：聊天系统综合\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 对话管理\n# - 安全过滤\n# - 模型路由\n# - 流式输出\n# - 会话管理\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：聊天系统综合\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 短消息mini\n# 2. 长消息4o\n# 3. 注入拦截\n# 4. 4条消息\n# 5. 有费用\n#\n# 📌 期望输出（部分）：\n#   → m1: mini\n#   → m2: gpt-4o\n#   → blocked: True\n#   → msgs: 4\n#   → cost: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 短消息mini' },
         { id: 'obj2', text: '🔥 长消息4o' },
@@ -4142,7 +4142,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：RAG 知识引擎\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 文档解析\n# - 分割\n# - 向量检索\n# - 重排序\n# - 答案生成\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：RAG 知识引擎\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 2条参考\n# 2. 2次查询\n# 3. 6条知识\n# 4. 平均2.0\n# 5. 有标题\n#\n# 📌 期望输出（部分）：\n#   → refs: 2\n#   → queries: 2\n#   → kb: 6\n#   → avg_refs: 2.0\n#   → has_title: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 2条参考' },
         { id: 'obj2', text: '🔥 2次查询' },
@@ -4183,7 +4183,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：Agent 综合训练\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 工具调用\n# - ReAct\n# - 状态机\n# - 执行追踪\n# - 多步推理\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：Agent 综合训练\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 3个子任务\n# 2. 3条发现\n# 3. 3步执行\n# 4. 有报告\n# 5. 2个工具\n#\n# 📌 期望输出（部分）：\n#   → tasks: 3\n#   → findings: 3\n#   → steps: 3\n#   → has_report: True\n#   → tools: 2\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 3个子任务' },
         { id: 'obj2', text: '🔥 3条发现' },
@@ -4224,7 +4224,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'castle', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：数据库综合演练\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - ORM\n# - CRUD\n# - 关联查询\n# - 事务\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：数据库综合演练\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 总收入5160\n# 2. 低库存2个\n# 3. Pen剩1\n# 4. 3单\n# 5. Laptop5000\n#\n# 📌 期望输出（部分）：\n#   → revenue: 5160\n#   → low_stock: 2\n#   → pen_stock: 1\n#   → orders: 3\n#   → o3_total: 5000\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 总收入5160' },
         { id: 'obj2', text: '🔥 低库存2个' },
@@ -4265,7 +4265,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'dragon', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：全栈毕业预演\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - 全栈\n# - Python\n# - FastAPI\n# - AI\n# - RAG\n# - Agent\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：全栈毕业预演\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 退货匹配\n# 2. 配送匹配\n# 3. 1人拦截\n# 4. 2张工单\n# 5. 3条FAQ\n#\n# 📌 期望输出（部分）：\n#   → a1: True\n#   → a2: True\n#   → blocked: 1\n#   → tickets: 2\n#   → faq_size: 3\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 退货匹配' },
         { id: 'obj2', text: '🔥 配送匹配' },
@@ -4306,7 +4306,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：混合搜索策略\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - BM25\n# - 混合搜索\n# - 权重调整\n# - 结果融合\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：混合搜索策略\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 融合2条\n# 2. Python最高\n# 3. 3篇文档\n# 4. 有RRF分\n# 5. RRF方法\n#\n# 📌 期望输出（部分）：\n#   → fused: 2\n#   → top: True\n#   → docs: 3\n#   → has_rrf: True\n#   → method: RRF\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 融合2条' },
         { id: 'obj2', text: '🔥 Python最高' },
@@ -4347,7 +4347,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：知识库管理\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - CRUD\n# - 版本控制\n# - 质量检测\n# - 批量操作\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：知识库管理\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 恢复前3活跃\n# 2. 恢复后3活跃\n# 3. 恢复后3篇\n# 4. 1个快照\n# 5. 恢复成功\n#\n# 📌 期望输出（部分）：\n#   → before_restore: 3\n#   → after_restore: 3\n#   → total_after: 3\n#   → snapshots: 1\n#   → has_restore: True\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 恢复前3活跃' },
         { id: 'obj2', text: '🔥 恢复后3活跃' },
@@ -4388,7 +4388,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'temple', monster: 'wizard', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：多模态API实战\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Vision API\n# - TTS\n# - Whisper\n# - 多模态消息\n# - 图文问答\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：多模态API实战\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 有转写文本\n# 2. 意图question\n# 3. 回复含AI\n# 4. 4步管道\n# 5. 4步完成\n#\n# 📌 期望输出（部分）：\n#   → has_text: True\n#   → intent: question\n#   → reply: True\n#   → steps: 4\n#   → done: 4\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 有转写文本' },
         { id: 'obj2', text: '🔥 意图question' },
@@ -4429,7 +4429,7 @@ print(f"trace_0: {agent.get_trace()[0]}")
       scene: { theme: 'cave', monster: 'golem', totalObjectives: 5 },
     },
     hard: {
-      initialCode: `# 🔥 困难模式：部署与配置\n# 🎯 独立实现以下功能，不提供代码框架\n#\n# 知识点:\n# - Dockerfile\n# - 环境变量\n# - 健康检查\n# - 配置管理\n# - Docker Compose\n#\n# 要求: 输出结果必须包含验证点中的关键字\n# 提示: 查看目标列表了解具体要求\n\n# 在此处编写你的代码\n`,
+      initialCode: `# 🔥 困难模式：部署与配置\n# 从零开始，根据注释要求独立编写代码\n#\n# 📋 任务清单：\n# 1. 全部成功\n# 2. 4阶段\n# 3. 4个stage\n# 4. 失败停止\n# 5. 停在test\n#\n# 📌 期望输出（部分）：\n#   → success: True\n#   → stages: 4\n#   → total: 4\n#   → failed: True\n#   → stopped: test\n#\n# 在下方编写你的代码 ↓\n\n`,
       objectives: [
         { id: 'obj1', text: '🔥 全部成功' },
         { id: 'obj2', text: '🔥 4阶段' },
