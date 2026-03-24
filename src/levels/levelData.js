@@ -979,9 +979,9 @@ import tempfile, os
 work_dir = Path(tempfile.mkdtemp())
 
 # 1. 创建目录结构
-(work_dir / "src").mkdir(exist_ok=True)
+(work_dir / "src").___()
 (work_dir / "src" / "utils").mkdir(exist_ok=True)
-(work_dir / "docs").mkdir(exist_ok=True)
+(work_dir / "docs").___()
 
 # 2. 写文件
 (work_dir / "README.md").write_text("# My Project\\nA cool project")
@@ -990,7 +990,7 @@ work_dir = Path(tempfile.mkdtemp())
 (work_dir / "docs" / "guide.md").write_text("# Guide\\nStep 1...")
 
 # 3. 读文件
-readme = (work_dir / "README.md").read_text()
+readme = (work_dir / "README.md").___()
 print(f"readme_lines: {len(readme.splitlines())}")
 
 # 4. 遍历所有 .py 文件（递归）
@@ -1059,7 +1059,7 @@ import asyncio
 
 # 1. 定义异步函数
 async def fetch_data(name, delay):
-    await asyncio.sleep(delay)  # 模拟网络请求
+    await asyncio.___(delay)  # 模拟网络请求
     return f"{name}_done"
 
 # 2. 顺序执行 vs 并发执行
@@ -1070,7 +1070,7 @@ async def sequential():
 
 async def concurrent():
     # asyncio.gather 并发执行多个协程（类似 Promise.all）
-    results = await asyncio.gather(
+    results = await asyncio.___(
         fetch_data("X", 0.1),
         fetch_data("Y", 0.1),
         fetch_data("Z", 0.1),
@@ -1138,7 +1138,7 @@ class MockResponse:
     def __init__(self, status_code, data):
         self.status_code = status_code
         self._data = data
-    def json(self):
+    def ___(self):
         return self._data
     def raise_for_status(self):
         if self.status_code >= 400:
@@ -1149,7 +1149,7 @@ class MockAsyncClient:
         return self
     async def __aexit__(self, *args):
         pass
-    async def get(self, url, **kwargs):
+    async def ___(self, url, **kwargs):
         await asyncio.sleep(0.01)
         if "error" in url:
             return MockResponse(500, {"error": "server error"})
@@ -2505,7 +2505,7 @@ class Chain:
     def __init__(self, prompt, llm, parser=None):
         self.prompt = prompt
         self.llm = llm
-        self.parser = parser or StrOutputParser()
+        self.parser = parser or ___()
     
     def invoke(self, inputs):
         messages = self.prompt.format_messages(**inputs)
@@ -2520,7 +2520,7 @@ translate_prompt = ChatPromptTemplate.from_messages([
     ("human", "{text}")
 ])
 llm = FakeLLM(model="gpt-4o-mini", temperature=0.3)
-translate_chain = Chain(translate_prompt, llm)
+translate_chain = ___(translate_prompt, llm)
 
 result1 = translate_chain.invoke({"text": "Hello World", "target_lang": "中文"})
 print(f"translate: {type(result1).__name__}")
@@ -2531,7 +2531,7 @@ summary_prompt = ChatPromptTemplate.from_messages([
     ("system", "用一句话摘要以下内容"),
     ("human", "{document}")
 ])
-summary_chain = Chain(summary_prompt, llm)
+summary_chain = ___(summary_prompt, llm)
 result2 = summary_chain.invoke({"document": "Python是一门优雅的编程语言"})
 print(f"summary: {'Summary' in result2}")
 
@@ -2955,7 +2955,7 @@ print(f"trace_len: {len(trace)}")
     regionIcon: '🤖',
     description: 'Agent 的核心能力就是调用工具！注册工具、解析参数、执行调用、处理错误——这就是 Function Calling 的底层逻辑。',
     knowledgePoints: ['工具注册', '参数解析', '错误处理', '工具列表'],
-    initialCode: `# ⚔️ 任务：Agent 工具调用系统\n\nimport json\n\nclass ToolRegistry:\n    def __init__(self):\n        self.tools = {}\n    def register(self, name, func, description):\n        self.tools[name] = {\"func\": func, \"desc\": description}\n    def call(self, name, **kwargs):\n        if name not in self.tools:\n            return {\"error\": f\"工具 {name} 不存在\"}\n        try:\n            result = self.tools[name][\"func\"](**kwargs)\n            return {\"result\": result, \"tool\": name}\n        except Exception as e:\n            return {\"error\": str(e), \"tool\": name}\n    def list_tools(self):\n        return [{\"name\": n, \"desc\": t[\"desc\"]} for n, t in self.tools.items()]\n\n# 注册工具\nregistry = ToolRegistry()\n\ndef calculator(expression):\n    return {\"result\": eval(expression), \"expression\": expression}\n\ndef weather(city):\n    data = {\"Beijing\": 22, \"Shanghai\": 25, \"Shenzhen\": 28}\n    temp = data.get(city, None)\n    if temp is None:\n        return {\"error\": \"城市不支持\"}\n    return {\"city\": city, \"temp\": temp}\n\ndef search(query, limit=3):\n    results = [f\"{query}_result_{i}\" for i in range(limit)]\n    return {\"query\": query, \"results\": results}\n\nregistry.register(\"calculator\", calculator, \"数学计算\")\nregistry.register(\"weather\", weather, \"天气查询\")\nregistry.register(\"search\", search, \"网络搜索\")\n\n# 测试调用\nr1 = registry.call(\"calculator\", expression=\"2+3*4\")\nr2 = registry.call(\"weather\", city=\"Beijing\")\nr3 = registry.call(\"search\", query=\"Python\", limit=2)\nr4 = registry.call(\"unknown_tool\")\n\nprint(f\"calc: {r1['result']['result']}\")\nprint(f\"temp: {r2['result']['temp']}\")\nprint(f\"search: {len(r3['result']['results'])}\")\nprint(f\"error: {'error' in r4}\")\nprint(f\"tools: {len(registry.list_tools())}\")`,
+    initialCode: `# ⚔️ 任务：Agent 工具调用系统\n\nimport json\n\nclass ToolRegistry:\n    def __init__(self):\n        self.___ = {}\n    def register(self, name, func, description):\n        self.tools[name] = {\"func\": func, \"desc\": description}\n    def call(self, name, **kwargs):\n        if name not in self.tools:\n            return {\"error\": f\"工具 {name} 不存在\"}\n        try:\n            result = self.tools[name][\"func\"](**kwargs)\n            return {\"result\": result, \"tool\": name}\n        except Exception as e:\n            return {\"error\": str(e), \"tool\": name}\n    def list_tools(self):\n        return [{\"name\": n, \"desc\": t[\"desc\"]} for n, t in self.tools.items()]\n\n# 注册工具\nregistry = ToolRegistry()\n\ndef calculator(expression):\n    return {\"result\": eval(expression), \"expression\": expression}\n\ndef weather(city):\n    data = {\"Beijing\": 22, \"Shanghai\": 25, \"Shenzhen\": 28}\n    temp = data.get(city, None)\n    if temp is None:\n        return {\"error\": \"城市不支持\"}\n    return {\"city\": city, \"temp\": temp}\n\ndef search(query, limit=3):\n    results = [f\"{query}_result_{i}\" for i in range(limit)]\n    return {\"query\": query, \"results\": results}\n\nregistry.register(\"calculator\", calculator, \"数学计算\")\nregistry.register(\"weather\", weather, \"天气查询\")\nregistry.register(\"search\", search, \"网络搜索\")\n\n# 测试调用\nr1 = registry.call(\"calculator\", expression=\"2+3*4\")\nr2 = registry.call(\"weather\", city=\"Beijing\")\nr3 = registry.call(\"search\", query=\"Python\", limit=2)\nr4 = registry.call(\"unknown_tool\")\n\nprint(f\"calc: {r1['result']['result']}\")\nprint(f\"temp: {r2['result']['temp']}\")\nprint(f\"search: {len(r3['result']['results'])}\")\nprint(f\"error: {'error' in r4}\")\nprint(f\"tools: {len(registry.list_tools())}\")`,
     objectives: [
       { id: 'obj1', text: '计算14' },
       { id: 'obj2', text: '北京22度' },
@@ -3280,7 +3280,7 @@ orders = [
     {"id": 3, "user_id": 2, "amount": 150},
 ]
 
-def join(users, orders):
+def ___(users, orders):
     """模拟 LEFT JOIN：每个用户附带其订单"""
     result = []
     for u in users:
@@ -3288,7 +3288,7 @@ def join(users, orders):
         result.append({**u, "orders": user_orders, "total": sum(o["amount"] for o in user_orders)})
     return result
 
-def aggregate(joined):
+def ___(joined):
     """返回总消费最高的用户名"""
     return max(joined, key=lambda x: x["total"])["name"]
 
@@ -4221,7 +4221,7 @@ class StateGraph:
         if not self.start: self.start = name
     def add_edge(self, from_node, to_node, condition=None):
         if from_node not in self.edges: self.edges[from_node] = []
-        self.edges[from_node].append({"to": to_node, "condition": condition})
+        self.edges[from_node].___({"to": to_node, "condition": condition})
     def run(self, state):
         current = self.start
         visited = []
@@ -4329,7 +4329,7 @@ print(f"error: {'error' in r3}")`,
 class MiniModel:
     def __init__(self, weights, quantized=False):
         self.weights = weights
-        self.quantized = quantized
+        self.___ = quantized
         self.size_mb = len(weights) * (1 if quantized else 4)
     def predict(self, input_vec):
         return sum(w * x for w, x in zip(self.weights, input_vec))
